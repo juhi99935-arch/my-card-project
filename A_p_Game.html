@@ -10,23 +10,36 @@
     display: flex;
     text-align: center;
   }
+  .container{
+    display: flex;
+    text-align: center;
+  }
 </style>
 <body>
-  <ul style="text-align: center;">
-    <li style="margin: 20px;">Arrow puzzle Game</li>
-    <li style="margin: 20px;">Score:1250</li>
-    <li style="margin: 20px;">Timer:01:32</li>
-    <li style="margin: 20px;">Level:4</li>
-  </ul>
-  <div class="container" style="text-align: center;">
+  <div class="container" style="text-align: center; border-radius: 2px; border-style: solid; border-width: 2px; background-color: bisque;">
+    <p style="margin: 30px;">Arrow puzzle Game</p>
+    <p style="margin: 30px;">Score:1250</p>
+    <p style="margin: 30px;">8</p>
+  <p style="margin: 30px;"><span class="countdown font-mono text-2xl">
+  <span style="--value:10;" aria-live="polite" aria-label="10">8</span>
+  :
+  <span style="--value:24; --digits: 2;" aria-live="polite" aria-label="24">20</span>
+  :
+  <span style="--value:59; --digits: 2;" aria-live="polite" aria-label="59">59</span>
+</span>
+    </p>
+    
+    <p style="margin: 30px;">Level:4</p>
+  </div>
+  <div class="hello" style="text-align: center; margin: 70px;">
    <p>Puzzle-level 4</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5veO0m6NLzPFdCOfw7UPe51ZqFXrntiYo4TVgafJzTNggvsXraMRb5ac&s=10" style="width: 500px;">
+    <img src="C:\Users\hp\Pictures\puzzle.jpg.jpeg" style="width: 500px;">
   </div>
   <div class="ro" style="text-align: center;">
-    <button style="background-color: purple; padding: 15px; font-size: 20px;">Rotate</button>
-    <button style="font-size: 20px; padding: 10px;">Reset</button>
-    <button  style="font-size: 20px; padding: 10px;">Hint</button>
-    <button style="background-color: purple; padding: 10px; font-size: 20px;">Next level</button>
+    <button style="background-color: purple; padding: 10px; font-size: 20px; color: white;">Rotate</button>
+    <button style="font-size: 20px; padding: 10px; background-color: purple; color: white;">Reset</button>
+    <button  style="font-size: 20px; padding: 10px; background-color: purple; color: white;">Hint</button>
+    <button style="background-color: purple; padding: 10px; font-size: 20px; color: white;">Next level</button>
   </div>
   <div class="click" style="text-align: center; margin: 20px;">
     <button style="background-color: plum; padding: 10px; font-size: 20px;">Click any arrow to rotate it, make all arrows point in same direction to win</button>
